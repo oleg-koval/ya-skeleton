@@ -1,0 +1,26 @@
+{
+  "name": "ya_skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha",
+    "lint": "eslint *.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:major": "./node_modules/.bin/changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "./node_modules/.bin/changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "./node_modules/.bin/changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+  },
+  "author": "Oleg Koval",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "danger": "^3.1.1",
+    "eslint": "^4.8.0",
+    "eslint-config-warp": "^2.1.0",
+    "generate-changelog": "^1.7.0"
+  }
+}
