@@ -5,6 +5,6 @@ const server = http.createServer((request, response) => {
   response.end('Hello World\n');
 });
 
-server.listen(8000);
+server.listen(3000);
 
 console.log('Server running at :some:port');

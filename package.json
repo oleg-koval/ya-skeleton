@@ -15,6 +15,7 @@
   "author": "Oleg Koval",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "nodemon": "^1.11.0"
   },
   "devDependencies": {
