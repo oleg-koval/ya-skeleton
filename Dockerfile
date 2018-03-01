@@ -6,10 +6,10 @@ ENV HOME=/home/nodejs
 ENV NODE_ENV=production
 
 COPY package.json $HOME/app/
-RUN chown -R nodejs:nodejs /home/nodejs/*
+RUN chown -R nodejs:nodejs $HOME/*
 
 USER nodejs
-WORKDIR /home/nodejs/app
+WORKDIR $HOME/app
 RUN yarn
 
 CMD ["npm", "start"]

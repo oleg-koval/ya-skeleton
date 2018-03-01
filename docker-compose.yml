@@ -1,11 +1,36 @@
-app:
-  mem_limit: 300m
-  memswap_limit: 1g
-  env_file:
-    .env
-  build: .
-  ports:
-    - '3000:8000'
-  volumes:
-    - .:/home/nodejs/app
-    - /home/nodejs/app/node_modules
+version: '2'
+
+services:
+  mongodb:
+    container_name: ya-mongo-db
+    image: alexpunct/mongo:3.4
+    volumes:
+      - mongostorage:/data/db
+    ports:
+      - "${MONGODB_EXPOSED_PORT}:27017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+      - MONGODB_ADMIN_USER=${MONGODB_ADMIN_USER}
+      - MONGODB_ADMIN_PASS=${MONGODB_ADMIN_PASS}
+      - MONGODB_APPLICATION_DATABASE=${MONGODB_APPLICATION_DATABASE}
+      - MONGODB_APPLICATION_USER=${MONGODB_APPLICATION_USER}
+      - MONGODB_APPLICATION_PASS=${MONGODB_APPLICATION_PASS}
+
+  api:
+    container_name: ya-server
+    build: .
+    restart: always
+    mem_limit: 300m
+    ports:
+      - "${REST_API_EXPOSED_PORT}:3000"
+    links:
+      - mongodb
+    volumes:
+      - ./:/home/nodejs/app
+    environment:
+      ME_CONFIG_APIKEY: $REST_API_APIKEY
+      ME_CONFIG_DBSTRING: "mongodb://${MONGODB_APPLICATION_USER}:${MONGODB_APPLICATION_PASS}@mongo:27017/${MONGODB_APPLICATION_DATABASE}"
+
+volumes:
+  mongostorage: {}
