@@ -10,7 +10,7 @@ const mdTableGen = (headers, rows) => {
   const headerStr = `|${headers.join('|')}|`;
   const temp = [];
 
-  for (let i = 0; i < headers.length; i++) {
+  for(let i = 0; i < headers.length; i++) {
     temp.push('---');
   }
 
@@ -44,7 +44,7 @@ if (testFilesIncludeExclusion.length > 0) {
 
 // Validate if commit message in PR conforms conventional change log, notify if it doesn't
 const invalidCommits = commits.reduce((acc, commit) => {
-  const invalid = !commit.message.match(/(breaking|build|ci|chore|docs|feat|fix|other|perf|refactor|revert|style|test):\s(.+)/);
+  const invalid = !commit.message.match(/(^(breaking|build|ci|chore|docs|feat|fix|other|perf|refactor|revert|style|test):\s(.+)|(^\d+\.\d+\.\d+)|(^updated\sCHANGELOG\.md$))/);
   if (invalid) {
     // acc.push(`| ${commit.sha.substr(0, 7)} | ${commit.message} |\n`);
     acc.push([
@@ -57,4 +57,10 @@ const invalidCommits = commits.reduce((acc, commit) => {
 
 if (invalidCommits.length > 0) {
   warn(`There are invalid Commits: \n\n${mdTableGen(['sha', 'commit'], invalidCommits)}`);
+}
+
+// Add a CHANGELOG entry for app changes
+const hasChangelog = danger.git.modified_files.includes('CHANGELOG.md')
+if (!hasChangelog) {
+  warn('Please add a changelog entry for your changes.')
 }
