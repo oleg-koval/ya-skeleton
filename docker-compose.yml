@@ -19,13 +19,16 @@ services:
 
   api:
     container_name: ya-server
+    build: .
     restart: always
     mem_limit: 300m
-    memswap_limit: 1g
     ports:
       - "${REST_API_EXPOSED_PORT}:3000"
     links:
       - mongodb
+    volumes:
+      - ./:/home/nodejs/app
+      - /home/nodejs/app/node_modules
     environment:
       ME_CONFIG_APIKEY: $REST_API_APIKEY
       ME_CONFIG_DBSTRING: "mongodb://${MONGODB_APPLICATION_USER}:${MONGODB_APPLICATION_PASS}@mongo:27017/${MONGODB_APPLICATION_DATABASE}"
