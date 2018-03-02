@@ -6,7 +6,7 @@ const server = http.createServer(function (request, response) {
 });
 
 
-server.listen(8000);
+server.listen(3000);
 
 
 console.log("Server running at :some:port");
