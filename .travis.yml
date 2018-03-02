@@ -13,3 +13,6 @@ after_success: npm run coverage
 
 node_js:
   - "8"
+
+# Skip builds for tags
+if: tag IS blank
