@@ -1,3 +1,9 @@
+#### 0.2.2 (2018-03-02)
+
+##### Chores
+
+*  modify danger rules (d10e2729)
+
 #### 0.2.1 (2018-03-02)
 
 ##### Other Changes
