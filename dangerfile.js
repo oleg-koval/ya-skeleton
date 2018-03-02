@@ -10,7 +10,7 @@ const mdTableGen = (headers, rows) => {
   const headerStr = `|${headers.join('|')}|`;
   const temp = [];
 
-  for(let i = 0; i < headers.length; i++) {
+  for (let i = 0; i < headers.length; i++) {
     temp.push('---');
   }
 
