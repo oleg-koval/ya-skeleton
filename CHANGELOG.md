@@ -1,3 +1,17 @@
+### 0.3.0 (2018-03-08)
+
+##### New Features
+
+*  add mongo storage (d91cbd3b)
+
+##### Bug Fixes
+
+*  Skip travis on changelog and tags commit (511f376d)
+
+##### Other Changes
+
+*  Add Issue Template guidelines (5a41f976)
+
 ## 1.0.0 (2018-03-02)
 
 ##### Bug Fixes
