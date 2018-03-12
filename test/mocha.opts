@@ -1,0 +1,6 @@
+--require should
+--require test/helper
+--reporter spec
+--ui bdd
+--recursive
+--exit

@@ -1,0 +1,11 @@
+extends: ../.eslintrc.yml
+env:
+  mocha: true
+globals:
+  app: true
+  request: true
+rules:
+  import/no-extraneous-dependencies: "off"
+  no-unused-expressions: "off"
+  no-continue: "off"
+  func-names: "off"

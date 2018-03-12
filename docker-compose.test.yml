@@ -1,5 +1,4 @@
 version: '2.1'
-
 services:
   mongodb:
     container_name: ya-mongo-db
@@ -32,6 +31,23 @@ services:
     environment:
       MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
       TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
+
+  tests:
+    container_name: tests
+    build: .
+    volumes:
+      - ./:/home/nodejs/app
+    environment:
+      MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
+      TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
+      NODE_ENV: "test"
+    depends_on:
+      api:
+        condition: service_started
+    links:
+      - api
+      - mongodb
+    command: npm test
 
 volumes:
   mongostorage: {}
