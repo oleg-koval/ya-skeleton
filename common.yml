@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  mongodb:
+    container_name: ya-mongo-db
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+      - MONGODB_EXPOSED_PORT=${MONGODB_EXPOSED_PORT}
+      - MONGODB_APPLICATION_DATABASE=${MONGODB_APPLICATION_DATABASE}
+      # Auth for mongo can be enabled later with setting up user@password:
+      # - MONGO_INITDB_ROOT_USERNAME=user
+      # - MONGO_INITDB_ROOT_PASSWORD=password
+  api:
+    container_name: ya-server
+    build: .
+    restart: always
+    mem_limit: 300m
+    environment:
+      MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
+      TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
