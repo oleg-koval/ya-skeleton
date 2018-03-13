@@ -1,3 +1,11 @@
+### 1.1.0 (2018-03-13)
+
+##### Documentation Changes
+
+*  add .env notice for readme.md ([b7f15dc6](https://github.com/oleg-koval/ya-skeleton/commit/b7f15dc6455b097c3325f57bd3e53d7962bd2f31))
+*  add contribution guidlines to readme ([2d479f88](https://github.com/oleg-koval/ya-skeleton/commit/2d479f88c916364e38d36cf3690e9c489e93f553))
+*  add readme.md ([204354d0](https://github.com/oleg-koval/ya-skeleton/commit/204354d071df347cf79e0b52d777f48ebb723280))
+
 ## 1.0.0 (2018-03-13)
 
 ##### New Features
