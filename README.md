@@ -52,6 +52,10 @@ npm run test:docker
 - [should](https://ghub.io/should): test framework agnostic BDD-style assertions
 - [supertest](https://ghub.io/supertest): SuperAgent driven library for testing HTTP servers
 
+## Contribute
+
+See [the contribute file](CONTRIBUTING.md)!
+
 ## License
 
 ISC © [Oleg Koval](https://github.com/oleg-koval)
