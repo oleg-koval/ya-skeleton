@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/oleg-koval/ya-skeleton"
+  },
   "scripts": {
     "start": "./bin/server | bunyan -o short",
     "test": "mocha",
