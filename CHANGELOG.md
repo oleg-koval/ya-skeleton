@@ -1,3 +1,19 @@
+## 1.0.0 (2018-03-13)
+
+##### New Features
+
+*  add controllers, tests (26d16228)
+*  add mongo storage (3eadba7d)
+
+##### Bug Fixes
+
+*  Skip travis on changelog and tags commit (511f376d)
+
+##### Other Changes
+
+*  split docker-compose files (054980ab)
+*  Add Issue Template guidelines (5a41f976)
+
 ### 0.3.0 (2018-03-08)
 
 ##### New Features
