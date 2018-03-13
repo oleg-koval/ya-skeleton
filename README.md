@@ -1,6 +1,8 @@
-# ya_skeleton [![Build Status](https://travis-ci.org/oleg-koval/ya-skeleton.png?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton)
+# ya_skeleton [![Build Status](https://travis-ci.org/oleg-koval/ya-skeleton.png?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) ![linted_by _sexy](https://img.shields.io/badge/linted_by-_sexy-brightgreen.svg)
 
 > Dockerized skeleton based on expressjs framework, with mongo support
+
+This repo contains `.env` file which should be definetely added to `.gitignore`, but in this case it is just an example. Be sure to add this file to your ignore!
 
 ## Installation
 
