@@ -5,23 +5,15 @@ services:
     extends:
       file: common.yml
       service: mongodb
-    volumes:
-      - mongostorage:/data/db
-    ports:
-      - "${MONGODB_EXPOSED_PORT}:27017"
 
   api:
     extends:
       file: common.yml
       service: api
-    ports:
-      - "${REST_API_EXPOSED_PORT}:3000"
     links:
       - mongodb
     depends_on:
       - mongodb
-    volumes:
-      - ./:/home/nodejs/app
 
   tests:
     container_name: tests
@@ -32,6 +24,7 @@ services:
       MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
       TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
       NODE_ENV: "test"
+      LOG_DISABLE: 1 # this option disables log for test env
     depends_on:
       api:
         condition: service_started

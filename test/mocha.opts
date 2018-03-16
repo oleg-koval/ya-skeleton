@@ -1,3 +1,4 @@
+--trace-warnings
 --require should
 --require test/helper
 --reporter spec
