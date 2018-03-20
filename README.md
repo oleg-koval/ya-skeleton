@@ -60,4 +60,4 @@ See [the contribute file](CONTRIBUTING.md)!
 
 ## License
 
-ISC © [Oleg Koval](https://github.com/oleg-koval)
+MIT © [Oleg Koval](https://github.com/oleg-koval) 2018
