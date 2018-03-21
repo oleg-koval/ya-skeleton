@@ -4,6 +4,10 @@ services:
   mongodb:
     container_name: ya-mongo-db
     image: mongo:latest
+    volumes:
+      - mongostorage:/data/db
+    ports:
+      - "${MONGODB_EXPOSED_PORT}:27017"
     environment:
       - MONGO_DATA_DIR=/data/db
       - MONGO_LOG_DIR=/dev/null
@@ -17,6 +21,13 @@ services:
     build: .
     restart: always
     mem_limit: 300m
+    ports:
+      - "${REST_API_EXPOSED_PORT}:3000"
+    volumes:
+      - ./:/home/nodejs/app
     environment:
       MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
       TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
+      LOG_OBFUSCATE_PLACEHOLDER: "HIDDEN_FIELD"
+      LOG_ROTATION_PERIOD: "3d"
+      LOG_COPIES_COUNT: "3"

@@ -5,22 +5,15 @@ services:
     extends:
       file: common.yml
       service: mongodb
-    volumes:
-      - mongostorage:/data/db
-    ports:
-      - "${MONGODB_EXPOSED_PORT}:27017"
+
   api:
     extends:
       file: common.yml
       service: api
-    ports:
-      - "${REST_API_EXPOSED_PORT}:3000"
     links:
       - mongodb
     depends_on:
       - mongodb
-    volumes:
-      - ./:/home/nodejs/app
 
 volumes:
   mongostorage: {}
