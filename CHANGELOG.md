@@ -1,3 +1,9 @@
+### 1.2.0 (2018-03-21)
+
+##### New Features
+
+*  add logging (0893f433)
+
 ### 1.1.0 (2018-03-13)
 
 ##### Documentation Changes
