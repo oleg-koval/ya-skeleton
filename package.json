@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "oleg-koval/ya-skeleton",
   "scripts": {
-    "start": "nodemon ./bin/server | exec $LOGGER -o short",
+    "start": "nodemon ./bin/server | $LOGGER -o short",
     "test": "mocha",
     "test:docker": "docker-compose -f docker-compose.test.yml run tests && docker-compose down",
     "lint": "eslint .",
@@ -19,21 +19,21 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "bunyan": "^1.8.12",
     "cors": "^2.8.4",
     "express": "^4.16.2",
+    "express-bunyan-logger": "^1.3.3",
     "express-request-id": "^1.4.0",
     "mongoose": "^5.0.9",
+    "nodemon": "^1.17.2",
     "qs": "^6.5.1"
   },
   "devDependencies": {
-    "bunyan": "^1.8.12",
     "danger": "^3.1.8",
     "eslint": "^4.18.2",
     "eslint-config-sexy": "^3.2.1",
-    "express-bunyan-logger": "^1.3.2",
     "generate-changelog": "^1.7.0",
     "mocha": "^5.0.4",
-    "nodemon": "^1.17.2",
     "should": "^13.2.1",
     "supertest": "^3.0.0"
   }
