@@ -6,7 +6,7 @@ services:
 language: node_js
 
 script:
-  - npm run ci
+  - npm run test:docker
   - yarn danger ci
 
 after_success: npm run coverage
