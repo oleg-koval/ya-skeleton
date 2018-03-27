@@ -25,6 +25,7 @@ services:
       - "${REST_API_EXPOSED_PORT}:3000"
     volumes:
       - ./:/home/nodejs/app
+      - /home/nodejs/app/node_modules
     environment:
       MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/${MONGODB_APPLICATION_DATABASE}"
       TEST_MONGO_CONNECTION_STRING: "mongodb://mongodb:${MONGODB_EXPOSED_PORT}/test"
