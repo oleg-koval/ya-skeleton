@@ -1,4 +1,6 @@
-# ya_skeleton [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy)
+# ya_skeleton
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/ya-skeleton.svg)](https://greenkeeper.io/) [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy)
 
 > Dockerized skeleton based on expressjs framework, with mongo support
 
