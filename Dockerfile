@@ -16,4 +16,4 @@ USER nodejs
 WORKDIR $HOME/app
 RUN yarn
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]

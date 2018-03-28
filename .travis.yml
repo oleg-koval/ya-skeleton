@@ -6,10 +6,10 @@ services:
 language: node_js
 
 script:
-  - npm run ci
+  - yarn run ci
   - yarn danger ci
 
-after_success: npm run coverage
+# after_success: yarn run coverage
 
 node_js:
   - "8"
