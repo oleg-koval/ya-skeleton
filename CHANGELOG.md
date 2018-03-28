@@ -1,3 +1,9 @@
+#### 1.3.2 (2018-03-28)
+
+##### Bug Fixes
+
+*  change release script (a77afafa)
+
 #### 1.3.1 (2018-03-28)
 
 ##### Documentation Changes
