@@ -11,7 +11,7 @@ This is a [Node.js](https://nodejs.org/) skeleton.
 
 ## Run the server
 
-First of all follow [this guide](https://docs.docker.com/compose/install/) for docker && docker-compose installation
+First of all follow [this guide](https://docs.docker.com/compose/install/) for docker && docker-compose installation. Be sure to have latest versions installed.
 
 To run server and mongodb in containers:
 
