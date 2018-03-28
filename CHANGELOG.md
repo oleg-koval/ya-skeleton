@@ -1,3 +1,28 @@
+#### 1.3.2 (2018-03-28)
+
+##### Bug Fixes
+
+*  change release script (a77afafa)
+
+#### 1.3.1 (2018-03-28)
+
+##### Documentation Changes
+
+*  Update readme badges (#21) (33293d3a)
+
+##### New Features
+
+*  add logging (#19) (94813876)
+
+##### Bug Fixes
+
+* Make it work (#26) (ee1bb518)
+
+##### Other Changes
+
+*  update express-bunyan-logger (c564d653)
+*  add license (#20) (9e44df25)
+
 ### 1.3.0 (2018-03-28)
 
 ##### Documentation Changes
