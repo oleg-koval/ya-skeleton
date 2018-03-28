@@ -1,3 +1,23 @@
+### 1.3.0 (2018-03-28)
+
+##### Documentation Changes
+
+*  update readme (5d86e60b)
+*  Update readme badges (#21) (33293d3a)
+
+##### New Features
+
+*  add logging (#19) (94813876)
+
+##### Bug Fixes
+
+*  use yarn everywhere (60498632)
+*  make it work (770c5679)
+
+##### Other Changes
+
+*  add license (#20) (9e44df25)
+
 ##### Documentation Changes
 
 *  Update readme badges (#21) (33293d3a)
