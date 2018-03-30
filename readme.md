@@ -1,6 +1,6 @@
 # ya_skeleton
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/ya-skeleton.svg)](https://greenkeeper.io/) [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy) [![bitHound Code](https://www.bithound.io/github/oleg-koval/ya-skeleton/badges/code.svg)](https://www.bithound.io/github/oleg-koval/ya-skeleton)
+[![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/ya-skeleton.svg)](https://greenkeeper.io/) [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy) [![bitHound Overall Score](https://www.bithound.io/github/oleg-koval/ya-skeleton/badges/score.svg)](https://www.bithound.io/github/oleg-koval/ya-skeleton) [![bitHound Dependencies](https://www.bithound.io/github/oleg-koval/ya-skeleton/badges/dependencies.svg)](https://www.bithound.io/github/oleg-koval/ya-skeleton/master/dependencies/npm)
 
 > Dockerized skeleton based on expressjs framework, with mongo support
 
@@ -23,7 +23,7 @@ docker-compose build && docker-compose up
 
 ## Tests
 
-Locally with npm (be sure to have running Mongo service):
+Locally with npm (be sure to have installed & running Mongo service and NodeJS):
 
 ```sh
 npm install

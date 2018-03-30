@@ -9,7 +9,8 @@ script:
   - yarn run ci
   - yarn danger ci
 
-# after_success: yarn run coverage
+after_success:
+  - bithound check git@github.com:oleg-koval/ya-skeleton.git
 
 node_js:
   - "8"
