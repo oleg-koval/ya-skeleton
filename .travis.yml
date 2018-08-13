@@ -5,6 +5,9 @@ services:
 
 language: node_js
 
+install:
+  - yarn --ignore-engines
+
 script:
   - yarn run ci
   - yarn danger ci
@@ -14,6 +17,7 @@ after_success:
 
 node_js:
   - "8"
+  - "10"
 
 # Skip builds for tags
 if: tag IS blank

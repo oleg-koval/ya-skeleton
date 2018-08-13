@@ -1,3 +1,59 @@
+### 1.4.0 (2018-08-13)
+
+##### Chores
+
+*  Make yarn install modules in node=10 (238a0e34)
+*  Update to node 10 in .travis.yml (2ee2c7ac)
+
+##### Continuous Integration
+
+*  add bithound (#31) (9b05e416)
+
+##### Documentation Changes
+
+*  add Greenkeeper badge (#30) (ed49941a)
+*  Update readme badges (#21) (33293d3a)
+
+##### New Features
+
+*  add logging (#19) (94813876)
+
+##### Bug Fixes
+
+* Make it work (#26) (ee1bb518)
+
+##### Other Changes
+
+*  remove bithound badges (e3440a1f)
+*  add bithound badge (43992632)
+*  update express-bunyan-logger (#28) (836a6011)
+*  add license (#20) (9e44df25)
+
+#### 1.3.4 (2018-08-13)
+
+##### Continuous Integration
+
+*  add bithound (#31) (9b05e416)
+
+##### Documentation Changes
+
+*  add Greenkeeper badge (#30) (ed49941a)
+*  Update readme badges (#21) (33293d3a)
+
+##### New Features
+
+*  add logging (#19) (94813876)
+
+##### Bug Fixes
+
+* Make it work (#26) (ee1bb518)
+
+##### Other Changes
+
+*  add bithound badge (43992632)
+*  update express-bunyan-logger (#28) (836a6011)
+*  add license (#20) (9e44df25)
+
 #### 1.3.3 (2018-03-30)
 
 ##### Continuous Integration
