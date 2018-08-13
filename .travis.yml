@@ -9,8 +9,8 @@ install:
   - yarn --ignore-engines
 
 script:
-  - yarn run ci
-  - yarn danger ci
+  - npm run ci
+  - npm danger ci
 
 node_js:
   - "8"
