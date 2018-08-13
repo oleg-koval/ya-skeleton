@@ -9,7 +9,7 @@
     "test": "mocha",
     "test:docker": "docker-compose -f docker-compose.test.yml run tests && docker-compose down",
     "lint": "eslint .",
-    "ci": "npx run lint && npx run test:docker",
+    "ci": "npm run lint && npm run test:docker",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
