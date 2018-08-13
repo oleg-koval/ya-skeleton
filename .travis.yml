@@ -5,6 +5,9 @@ services:
 
 language: node_js
 
+install:
+  - yarn --ignore-engines
+
 script:
   - yarn run ci
   - yarn danger ci
