@@ -33,7 +33,7 @@
     "danger": "^3.8.6",
     "eslint": "^4.18.2",
     "eslint-config-sexy": "^3.2.1",
-    "generate-changelog": "^1.7.0",
+    "generate-changelog": "^1.7.1",
     "mocha": "^5.0.4",
     "should": "^13.2.3",
     "supertest": "^3.0.0"
