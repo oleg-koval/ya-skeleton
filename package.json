@@ -32,7 +32,7 @@
     "bithound": "^1.7.0",
     "danger": "^3.1.8",
     "eslint": "^4.18.2",
-    "eslint-config-sexy": "^3.2.1",
+    "eslint-config-sexy": "^4.0.1",
     "generate-changelog": "^1.7.0",
     "mocha": "^5.0.4",
     "should": "^13.2.1",
