@@ -26,7 +26,7 @@
     "express-request-id": "^1.4.0",
     "mongoose": "^5.2.13",
     "nodemon": "^1.18.3",
-    "qs": "^6.5.1"
+    "qs": "^6.5.2"
   },
   "devDependencies": {
     "bithound": "^1.7.0",
