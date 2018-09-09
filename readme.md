@@ -1,6 +1,6 @@
 # ya_skeleton
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/ya-skeleton.svg)](https://greenkeeper.io/) [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6746e399c7d74d6c9d8b818b8b714cc5)](https://www.codacy.com/app/oleg-koval/ya-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=oleg-koval/ya-skeleton&amp;utm_campaign=Badge_Grade) [![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/ya-skeleton.svg)](https://greenkeeper.io/) [![build status](https://travis-ci.org/oleg-koval/ya-skeleton.svg?branch=master)](https://travis-ci.org/oleg-koval/ya-skeleton) [![linted by sexy yo!](https://img.shields.io/badge/linted%20by-sexy%20yo!-brightgreen.svg)](https://github.com/markelog/eslint-config-sexy) ![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) 
 
 > Dockerized skeleton based on expressjs framework, with mongo support
 
