@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "bithound": "^1.7.0",
-    "danger": "^3.8.6",
+    "danger": "^3.9.0",
     "eslint": "^4.18.2",
     "eslint-config-sexy": "^3.2.1",
     "generate-changelog": "^1.7.1",
