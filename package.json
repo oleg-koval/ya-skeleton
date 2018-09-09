@@ -43,7 +43,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "danger": "^3.9.0",
     "eslint": "^4.18.2",
-    "eslint-config-sexy": "^3.2.1",
+    "eslint-config-sexy": "^4.0.1",
     "mocha": "^5.2.0",
     "semantic-release": "^15.9.14",
     "should": "^13.2.3",
