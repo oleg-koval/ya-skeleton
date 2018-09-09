@@ -10,9 +10,6 @@
     "test:docker": "docker-compose -f docker-compose.test.yml run tests && docker-compose down",
     "lint": "eslint .",
     "ci": "yarn run lint && yarn run test:docker",
-    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
-    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
-    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
@@ -31,15 +28,13 @@
     "qs": "^6.5.2"
   },
   "devDependencies": {
-    "bithound": "^1.7.0",
     "danger": "^3.9.0",
     "eslint": "^4.18.2",
     "eslint-config-sexy": "^3.2.1",
-    "generate-changelog": "^1.7.1",
     "mocha": "^5.0.4",
+    "semantic-release": "^15.9.14",
     "should": "^13.2.3",
     "supertest": "^3.0.0",
-    "travis-deploy-once": "^5.0.7",
-    "semantic-release": "^15.9.14"
+    "travis-deploy-once": "^5.0.7"
   }
 }
