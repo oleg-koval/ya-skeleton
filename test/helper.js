@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../lib/app');
-const config = require('../lib/config');
+const config = require('../config');
 
 global.request = request;
 global.app = app;
