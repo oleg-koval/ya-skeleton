@@ -3,6 +3,10 @@
   "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
   "repository": "oleg-koval/ya-skeleton",
   "scripts": {
     "start": "nodemon ./bin/server | exec $LOGGER -o short",
@@ -13,19 +17,12 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
   "release": {
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "prepare": [
-      {
-        "path": "@semantic-release/changelog",
-        "changelogFile": "CHANGELOG.md"
-      },
-      "@semantic-release/npm",
-      "@semantic-release/git"
+    "publish": [
+      "@semantic-release/github"
     ]
   },
   "author": "Oleg Koval",
@@ -43,6 +40,7 @@
     "qs": "^6.5.2"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
     "danger": "^3.9.0",
     "eslint": "^4.18.2",
     "eslint-config-sexy": "^3.2.1",
