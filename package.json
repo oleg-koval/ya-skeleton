@@ -28,7 +28,7 @@
   "author": "Oleg Koval",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.5.1",
+    "bluebird": "^3.5.2",
     "body-parser": "^1.18.2",
     "bunyan": "^1.8.12",
     "cors": "^2.8.4",
