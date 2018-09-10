@@ -9,3 +9,4 @@ rules:
   no-unused-expressions: "off"
   no-continue: "off"
   func-names: "off"
+  import/no-unresolved: off # because of module-alias/register

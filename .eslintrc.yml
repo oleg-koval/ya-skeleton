@@ -1,3 +1,5 @@
 extends: sexy
 env:
   node: true
+rules:
+  import/no-unresolved: off # because of module-alias/register
