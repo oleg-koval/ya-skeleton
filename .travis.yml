@@ -4,9 +4,11 @@ services:
 language: node_js
 install:
   - yarn --ignore-engines
+  - "npm install -g jsinspect"
 script:
   - yarn run ci
   - yarn danger ci
+  - "jsinspect ./lib"
 notifications:
   email: false
 node_js:
