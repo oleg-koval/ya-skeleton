@@ -6,7 +6,7 @@ install:
   - "npm install -g jsinspect"
 script:
   - "npm run ci"
-  - "npm run danger ci"
+  - "npx danger ci"
   - "jsinspect ./lib"
 notifications:
   email: false
