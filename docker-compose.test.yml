@@ -31,7 +31,7 @@ services:
     links:
       - api
       - mongodb
-    command: yarn run test
+    command: npm run test
 
 volumes:
   mongostorage: {}

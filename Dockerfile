@@ -15,6 +15,6 @@ RUN chown -R nodejs:nodejs $LOGS/
 
 USER nodejs
 WORKDIR $HOME/app
-RUN yarn
+RUN npm install
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]

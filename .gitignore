@@ -1,5 +1,6 @@
 /node_modules/
 /yarn-error.log
+/npm-error.log
 /.nyc_output/
 /.envrc
 .DS_Store

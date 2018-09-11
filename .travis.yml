@@ -3,11 +3,10 @@ services:
   - docker
 language: node_js
 install:
-  - yarn --ignore-engines
   - "npm install -g jsinspect"
 script:
-  - yarn run ci
-  - yarn danger ci
+  - "npm run ci"
+  - "npm danger ci"
   - "jsinspect ./lib"
 notifications:
   email: false
