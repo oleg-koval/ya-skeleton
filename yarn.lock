@@ -1606,9 +1606,9 @@ damerau-levenshtein@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.4.tgz#03191c432cb6eea168bb77f3a55ffdccb8978514"
 
-danger@^4.4.8:
-  version "4.4.8"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-4.4.8.tgz#40e0448c3b20d44455b9a630fa895348811e6b78"
+danger@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-6.0.0.tgz#f18d48508162e092f092fce9bad1b252622a4337"
   dependencies:
     "@babel/polyfill" "^7.0.0"
     "@octokit/rest" "^15.12.1"
@@ -1629,6 +1629,7 @@ danger@^4.4.8:
     memfs-or-file-map-to-github-branch "^1.1.0"
     node-cleanup "^2.1.2"
     node-fetch "^2.2.0"
+    override-require "^1.1.1"
     p-limit "^2.0.0"
     parse-diff "^0.5.1"
     parse-git-config "^2.0.3"
@@ -4630,6 +4631,10 @@ osenv@0, osenv@^0.1.4, osenv@^0.1.5:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+override-require@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/override-require/-/override-require-1.1.1.tgz#6ae22fadeb1f850ffb0cf4c20ff7b87e5eb650df"
 
 p-cancelable@^0.5.0:
   version "0.5.1"
