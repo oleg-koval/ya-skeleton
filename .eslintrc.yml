@@ -1,3 +1,5 @@
 extends: sexy
 env:
   node: true
+globals:
+  expect: true

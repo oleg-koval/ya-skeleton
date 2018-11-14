@@ -12,7 +12,8 @@
     "start": "./bin/server | exec $LOGGER -o short",
     "start:rs": "nodemon ./bin/server",
     "test": "mocha",
-    "test:docker": "docker-compose -f docker-compose.test.yml run tests && docker-compose down",
+    "test:docker": "docker-compose -f docker-compose.test.yml run tests",
+    "docker:down": "docker-compose down",
     "lint": "eslint .",
     "ci": "yarn run lint && yarn run test:docker",
     "travis-deploy-once": "travis-deploy-once",
@@ -42,6 +43,7 @@
     "qs": "^6.5.2"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "cz-conventional-changelog": "^2.1.0",
     "danger": "^6.0.7",
     "eslint": "^5.7.0",
