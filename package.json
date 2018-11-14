@@ -1,7 +1,7 @@
 {
   "name": "ya_skeleton",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Dockerized skeleton based on expressjs framework, with mongo support",
   "main": "index.js",
   "engines": {
     "node": ">=8",
@@ -9,7 +9,8 @@
   },
   "repository": "oleg-koval/ya-skeleton",
   "scripts": {
-    "start": "nodemon ./bin/server | exec $LOGGER -o short",
+    "start": "./bin/server | exec $LOGGER -o short",
+    "start:rs": "nodemon ./bin/server",
     "test": "mocha",
     "test:docker": "docker-compose -f docker-compose.test.yml run tests && docker-compose down",
     "lint": "eslint .",
