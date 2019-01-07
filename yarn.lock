@@ -4052,15 +4052,14 @@ mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
 
-mongoose@^5.3.15:
-  version "5.3.15"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.3.15.tgz#11a803a4ae640b0cce29a2579282ac9dd005c47a"
-  integrity sha512-51PchMQn2kFZYPSe0vfr8RcJxm6g7RokfcVl2xVORogtT5GUKu6RgnRXsUV7v9vZ+b3Wh//ph53kuIyhtXi56g==
+mongoose@^5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.4.2.tgz#3f3d87e0082f3e28bf24f0e3f87e107195996461"
+  integrity sha512-bZFYe9oikiLZ2npfSbIGNYpJ0MJVQaSQhU09VFxvu6r7nVGixbt031ewZldKbWwHsG/JPJLX2HhUa8are84ryQ==
   dependencies:
     async "2.6.1"
     bson "~1.1.0"
     kareem "2.3.0"
-    lodash.get "4.4.2"
     mongodb "3.1.10"
     mongodb-core "3.1.9"
     mongoose-legacy-pluralize "1.0.2"
