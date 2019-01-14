@@ -49,7 +49,7 @@
     "eslint": "^5.7.0",
     "eslint-config-sexy": "^5.0.0",
     "mocha": "^5.2.0",
-    "semantic-release": "^15.13.2",
+    "semantic-release": "^15.13.3",
     "should": "^13.2.3",
     "supertest": "^3.3.0",
     "travis-deploy-once": "^5.0.11"
