@@ -40,7 +40,7 @@
     "express-request-id": "^1.4.1",
     "mongoose": "^5.4.15",
     "nodemon": "^1.18.7",
-    "qs": "^6.6.0"
+    "qs": "^6.7.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
