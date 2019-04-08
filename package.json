@@ -48,7 +48,7 @@
     "danger": "^6.1.10",
     "eslint": "^5.7.0",
     "eslint-config-sexy": "^5.0.0",
-    "mocha": "^6.0.1",
+    "mocha": "^6.1.1",
     "semantic-release": "^15.13.3",
     "should": "^13.2.3",
     "supertest": "^3.4.2",
