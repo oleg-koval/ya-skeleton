@@ -1,4 +1,4 @@
-FROM node:10.10.0
+FROM node:10.16.3
 MAINTAINER kvl.olg@gmail.com
 
 RUN useradd --user-group --create-home --shell /bin/false nodejs
