@@ -19,7 +19,7 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
@@ -43,7 +43,7 @@
     "mongoose": "^5.5.5",
     "nodemon": "^1.18.7",
     "qs": "^6.7.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
