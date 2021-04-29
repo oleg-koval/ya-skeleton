@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - 7.16.0
+    - 7.19.0
+  - dependency-name: danger
+    versions:
+    - 10.5.4
+    - 10.6.1
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+  - dependency-name: npm
+    versions:
+    - 6.14.9
+  - dependency-name: nodemon
+    versions:
+    - 2.0.6
+  - dependency-name: qs
+    versions:
+    - 6.9.4
