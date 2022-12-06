@@ -42,7 +42,7 @@
     "express-request-id": "^1.4.1",
     "mongoose": "^5.5.5",
     "nodemon": "^1.18.7",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "snyk": "^1.189.0"
   },
   "devDependencies": {
